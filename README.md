@@ -8,7 +8,7 @@ Compilation of basic C program [more info here](https://www.scaler.com/topics/ex
  - Preprocessing (*.i files) 
  - Compilation (*.s files - assembly files)
  - Assembly (*.o files)
- - Linking   (Linking of all the *.o files to *.exe)
+ - Linking - static and dynamic linking(*.dll files)  (Linking of all the *.o files to *.exe)
 
  Command to see the compilation process for C program in GCC.
  ```console 
