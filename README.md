@@ -16,4 +16,13 @@ Compilation of basic C program [more info here](https://www.scaler.com/topics/ex
 
  ```
 
+Some other concept of C program are keywords and reserved words. Identifiers are names of functions or variables. Be careful how to declare variable in C as it does not allow special characters such as @, $ etc as identifiers. C programs are case sensitive. Readablity and maintainablity of programs are good things. We can use tools like makefile for large C programs compilations. C program is composed of keywords, identifiers, constants, string literals and symbols.   
+
+### Variable declarations
+Different types of variables in C Programming are primary, derived -array,pointer, structure, union etc. and user defined. [more info here](https://www.geeksforgeeks.org/data-types-in-c/)
+
+int,char,float, double, long,    
+Syntax  
+
+> type variable_name1,name2 = value; 
 
