@@ -24,5 +24,10 @@ Different types of variables in C Programming are primary, derived -array,pointe
 int,char,float, double, long,    
 Syntax  
 
-> type variable_name1,name2 = value; 
+> type variable_name1,name2 = value;   
+
+### Operators in C Programming
+Arthmatic +,-./.*.% 
+bitwise - , logical, assigment, relational operators   
+
 
