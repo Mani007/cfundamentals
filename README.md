@@ -27,7 +27,10 @@ Syntax
 > type variable_name1,name2 = value;   
 
 ### Operators in C Programming
-Arthmatic +,-./.*.% 
-bitwise - , logical, assigment, relational operators   
+Arthmatic +,-./.*.%   
+bitwise -  ,   
+logical,    
+assigment,   
+relational operators   
 
 
