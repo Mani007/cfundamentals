@@ -28,9 +28,9 @@ Syntax
 
 ### Operators in C Programming
 Arthmatic +,-./.*.%   
-bitwise -  ,   
-logical,    
-assigment,   
-relational operators   
+bitwise - &,|,^ -xor,<< - shift left,>> - shift right, ~ -one's complement   
+logical &&,||,!,    
+assigment  =, += (AddAND operator add right operand to left operand and store in the left operand), -=,*=,/=   
+relational operators  ==,!=,>=,<=,>,<
 
 
