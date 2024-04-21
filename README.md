@@ -31,6 +31,10 @@ Arthmatic +,-./.*.%
 bitwise - &,|,^ -xor,<< - shift left,>> - shift right, ~ -one's complement   
 logical &&,||,!,    
 assigment  =, += (AddAND operator add right operand to left operand and store in the left operand), -=,*=,/=   
-relational operators  ==,!=,>=,<=,>,<
+relational operators  ==,!=,>=,<=,>,<   
+sizeof() operator,  
+& - addressOF operator
+'*' - pointer declaration and dereferencing operator
+?: - conditional expression
 
 
