@@ -8,7 +8,10 @@ Compilation of basic C program [more info here](https://www.scaler.com/topics/ex
  - Preprocessing (*.i files) 
  - Compilation (*.s files - assembly files)
  - Assembly (*.o files)
- - Linking - static and dynamic linking(*.dll files)  (Linking of all the *.o files to *.exe)
+ - Linking - static and dynamic linking(*.dll files)  (Linking of all the *.o files to *.exe)   
+
+ **Make sure to use Debuger in C/C++ programs to code better**  [More info here](https://www.youtube.com/watch?v=NJYcRcqPyOw&ab_channel=ProgrammingKnowledge)  
+ **Advance debugging skills** [More info here](https://www.youtube.com/watch?v=zSljcz54pYQ&ab_channel=CaseDigital)  
 
  Command to see the compilation process for C program in GCC.
  ```console 
@@ -35,6 +38,11 @@ relational operators  ==,!=,>=,<=,>,<
 sizeof() operator,  
 & - addressOF operator
 '*' - pointer declaration and dereferencing operator
-?: - conditional expression
+?: - conditional expression 
+-> - AccessThroughPointer operator
+
+**Very important concept in C is called operator Precedence** [More info Link](https://en.cppreference.com/w/c/language/operator_precedence)   
+
+
 
 
