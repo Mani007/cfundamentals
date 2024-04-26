@@ -45,8 +45,15 @@ sizeof() operator,
 
 ### Format specifier
 Tells the complier about what type of datatype is in a variable.   
-Exaples: %d for integer, %f for floating point etc. 
+Exaples: %d for integer, %f for floating point, %c for character, %l for long, %lf for double, %Lf for long double  etc.   
 
+### Constants in C   
+Value that cannot be changed is constants. 
+>// is the keyword   
+> const    
+
+Or we can use #define
+> #define 
 
 
 
