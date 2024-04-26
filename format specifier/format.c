@@ -5,6 +5,6 @@ int main() {
    int num = 25;
    float num1 = 10.11;
    //printf("Hello, World! %d", num);
-   printf("Value of int is %d and value of float is %0.7f \n", num, num1);
+   printf("Value of int is %d and value of float is %-18.7f  this offset space\n", num, num1);
    return 0;
 }
