@@ -46,7 +46,8 @@ sizeof() operator,
 ### Format specifier
 Tells the complier about what type of datatype is in a variable.   
 Exaples: %d for integer, %f for floating point, %c for character, %l for long, %lf for double, %Lf for long double  etc.    
-Another type of format specifiers are **escape sequences** such as \n for newline, \t for tab, \r for carriage return etc.  
+Another type of format specifiers are **escape sequences** such as \n for newline, \t for tab, \r for carriage return etc.    
+And finally we have comments in C **//** for single line comments and /**/ for multiline comments. 
 
 ### Constants in C   
 Value that cannot be changed is constants. 
