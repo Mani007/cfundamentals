@@ -43,6 +43,10 @@ sizeof() operator,
 
 **Very important concept in C is called operator Precedence** [More info Link](https://en.cppreference.com/w/c/language/operator_precedence)   
 
+### Format specifier
+Tells the complier about what type of datatype is in a variable.   
+Exaples: %d for integer, %f for floating point etc. 
+
 
 
 
