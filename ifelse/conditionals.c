@@ -12,9 +12,12 @@ scanf("%d", &num);
    if (num == 25)
    {
     /* code */
-    printf("The value is true");
+    printf("The value is 25");
+   } else if (num == 15){
+    printf("The number is 15");
    } else {
-    printf("The number is not 25");
+
+    printf("The number is not 25 or 15");
    }
    
    return 0;
