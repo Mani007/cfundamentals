@@ -9,10 +9,14 @@ int main() {
 printf("Enter a number \n" );
 scanf("%d", &num);
 
-   if (num == 25)
+   if (num%5 == 0)
    {
+    printf("The value is multiple of 5x \n");
     /* code */
-    printf("The value is 25");
+    if (num == 25){
+
+    printf("The value is 25 \n");
+    }
    } else if (num == 15){
     printf("The number is 15");
    } else {
