@@ -55,7 +55,14 @@ Value that cannot be changed is constants.
 > const    
 
 Or we can use #define
-> #define 
+> #define   
+### Control and consitional statements in C
+1. If statement
+2. if else statement
+3. if   else if   else ladder
+4. Switch cases (including default case ) 
+5. Nested if statements  
+
 
 
 
