@@ -61,20 +61,31 @@ Or we can use #define
 2. if else statement
 3. if   else if   else ladder
 4. Switch cases (including default case ) : This avoid too much of if statements.
-5. Nested if statements    
+5. Nested if statements      
+6. Nested switch is also possible
 ```
 int expression = 10;
-switch (expression) {
+switch (expression) // must be an integer expression or character expression
+ {
   case x:
     // code block
-    break;
+    break;   
+// it is not a must to have break statements BUT its recomended to use break statements. 
   case y:
     // code block
     break;
   default:
     // code block
 }   
-```
+```    
+### Loops in C 
+Used for repeations. There are three major loops
+1. for loop
+2. While loop (integer and boolean)
+3. Do while loop    (integer and boolean) - At least one execution is gaurenteed 
+Make sure that you will not enter the infinite loop. 
+
+
 
 
 
