@@ -60,8 +60,21 @@ Or we can use #define
 1. If statement
 2. if else statement
 3. if   else if   else ladder
-4. Switch cases (including default case ) 
-5. Nested if statements  
+4. Switch cases (including default case ) : This avoid too much of if statements.
+5. Nested if statements    
+```
+int expression = 10;
+switch (expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}   
+```
 
 
 
