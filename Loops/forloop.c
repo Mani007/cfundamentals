@@ -12,7 +12,7 @@ int main() {
           {
                     printf("We are in for loop with index at %d,\n", index);
                     //index++; Also written as index= index + 1  or index += 1
-                    // expression 3 in for loop is optional
+                    // expression 3 in for loop is optional and can be declared in side the for loop. 
           }
            
                 
