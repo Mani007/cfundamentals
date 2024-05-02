@@ -1,5 +1,7 @@
 # All my C/C++ tutorials
-### Basic C Program execution
+### Basic C Program execution   
+**Note:** for c++ setup in VScode please watch this video [link](https://www.youtube.com/watch?v=ABVeAXcRIJg&ab_channel=Codeflash)   
+
 A C program consists of 
 - Preprocessor command and directive (#include)
 - Functions, variable, statements of expression and comments    
