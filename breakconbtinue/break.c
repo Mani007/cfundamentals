@@ -1,28 +1,29 @@
 #include <stdio.h>
 int main() {
    
-   int index=0, num;
+   int i;
+   int num;
   
     printf("Enter a number of time you want to repeat between 0 to 10 .... \n" );
     scanf("%d", &num);
-    if (num>0 && num<10) 
-        {
+   i=0;
     /* code */
-            while (index < num) 
+            while (i < num) // make sure to check the while condition
                 {
-                    printf("We are in while loop with index at %d,\n", index);
-                    index++;
-                    if (index==5)
-                    {
-                        printf("We are breaking out of the loop as index is 5 \n");
-                        break;  // break statment is added
-                    }
                     
-                }
-    } else 
-    {
-            printf("You have entered INFINITE loop number \n");
-    }
+                    printf("We are in while loop with index at %d,\n", i);
+                    if (i>5)
+                    {
+                     printf("We are breaking the loop here and below lines will not be executed ");
+                     continue;     
+                     printf("After continue statement %d,\n", i);
+                    }
+                    i++;
+                    
+                    printf("After if statement %d,\n", i);
+                                  
+                 }
+   
    
    return 0;
 }

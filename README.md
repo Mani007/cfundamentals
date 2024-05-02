@@ -83,8 +83,9 @@ Used for repeations. There are three major loops
 1. for loop
 2. While loop (integer and boolean)
 3. Do while loop    (integer and boolean) - At least one execution is gaurenteed 
-Make sure that you will not enter the infinite loop.   
-> break; // statment can be used to break out of the loops and switch cases
+Make sure that you will not enter the infinite loop.  
+> **continue;** // statement is used to just break out of the loop to next iteration by skipping some statements of the codes inside the loops.    
+> **break;** // statement can be used to break out of the loops and switch cases
 
 
 
