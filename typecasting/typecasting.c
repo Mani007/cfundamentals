@@ -2,6 +2,6 @@
 int main() {
     int a=3;
     float b=48;
-    printf("The value of a divided by b is %d\n",a/b);
+    printf("\tThe value of a divided by b is %f\n",(float)a/b);
 return 0;
 }
