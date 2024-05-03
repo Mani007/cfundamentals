@@ -19,7 +19,22 @@ Compilation of basic C program [more info here](https://www.scaler.com/topics/ex
  ```console 
  gcc -wall -save-temps main.c -o output
 
+ ```    
+ Some code snipped for basic C program is    
  ```
+ "main": {
+		"prefix": "maincode",
+		"body": [
+			"#include <stdio.h>",
+			"int main() {",
+			"\t$1",
+			"return 0;",
+			"}",
+			
+		],
+		"description": "For settingup basic main program of C"
+	}   
+  ```
 
 Some other concept of C program are keywords and reserved words. Identifiers are names of functions or variables. Be careful how to declare variable in C as it does not allow special characters such as @, $ etc as identifiers. C programs are case sensitive. Readablity and maintainablity of programs are good things. We can use tools like makefile for large C programs compilations. C program is composed of keywords, identifiers, constants, string literals and symbols.   
 
