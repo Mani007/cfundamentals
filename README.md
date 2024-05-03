@@ -89,8 +89,10 @@ Make sure that you will not enter the infinite loop.
 > **continue;** // statement is used to just break out of the loop to next iteration by skipping some statements of the codes inside the loops.    
 > **break;** // statement can be used to break out of the loops and switch cases   
 
-### Goto statement
-> goto; // used for jumpuing statements   AVOID using it as it causes confusion in c code execution
+### Goto statement   
+This statement is mainly used if we want to break multiple loops with single statements    
+> goto; // used for jumpuing statements   AVOID using it as it causes confusion in c code execution  
+
 
 
 
