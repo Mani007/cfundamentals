@@ -18,9 +18,9 @@ int main() {
      {
       printf(" We are at nested loop J index at %d\n",j);
      
-    /* if(j==3){
+     if(j==2){
         goto endpart;
-    } */
+    } 
       }
 
    }
