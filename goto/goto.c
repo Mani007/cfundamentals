@@ -9,8 +9,10 @@ int main() {
     top:   // Declaring a label called top. This may create infinite loops.  create infinite loop
     printf("We are inside goto statement.\n");
     printf("We are inside INFINITE LOOP.\n");
-   
+   goto end;
     goto top;
+    end:
+    printf("We have escaped out of goto loop.\n");
    
    
    return 0;
