@@ -106,7 +106,17 @@ Make sure that you will not enter the infinite loop.
 
 ### Goto statement   
 This statement is mainly used if we want to break multiple loops with single statements    
-> goto; // used for jumpuing statements   AVOID using it as it causes confusion in c code execution  
+> goto; // used for jumpuing statements   AVOID using it as it causes confusion in c code execution    
+
+### Functions in C   
+Modularity and reusability is obtained through functions. Easy debugging, divide work among people and easy maintainability. Different types of functions are library function and user defined functions.     
+Functions need DECLARATION, DEFINITION and CALL 
+```C Syntax
+return_type function_name (para1_type para1_name, para2_type para2_name)
+{
+    // body of the function
+}
+```
 
 
 
