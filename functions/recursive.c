@@ -13,26 +13,45 @@ int nSum(int n){
 }
 
 int nFactorial(int n){
+     // base condition to terminate the recursion when N = 0
     if (n==0 || n==1) 
     {
         return 1;
     }
-
-    int res = n * nFactorial(n - 1);
+// recursive case / recursive call
+    int res = n * nFactorial(n - 1);  // make sure to use parentheses for clear operator precedence 
     return res;
     
     
     }
-int main() {
-     int n = 5;
 
-    // calling the function
+int fibonacci(int n)
+{
+    // Base case
+    // Fibonacci of 0 and 1 is the number itself
+    if (n <= 1) {
+        return n;
+    }
+    else {
+        // Tree recursive calls
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+int main() {
+     int n = 7;
+
+    // calling the recursive function
     int sum = nSum(n);
 
-    // calling the function
+    // calling recursive function
     int fsum = nFactorial(n);
+
+    // calling recursive function
+    int ffab = fibonacci(n);
 
     printf("Sum of First %d Natural Numbers: %d \n", n, sum);
     printf("Factorial of First %d Natural Numbers: %d \n", n, fsum);
+    printf("Fibonacci of First %d Natural Numbers: %d \n", n, ffab);
+    // You cannot use the recursive function and bigger numbers
 return 0;
 }
