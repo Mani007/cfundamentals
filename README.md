@@ -117,8 +117,8 @@ return_type function_name (para1_type para1_name, para2_type para2_name)
     // body of the function
 }
 ```
-
-
+### Recursion in C functions  
+Recursive function: When a function call a copy of itself to solve a problem. Please not it require a **termination** condition. Also recursion can be replaced with iteration and often problems are broken into base cases and recursive cases. e.g. tower of hanoi, fibonacci series and factorial problems . [More info here](https://www.geeksforgeeks.org/c-recursion/)
 
 
 
