@@ -1,5 +1,5 @@
 #include <stdio.h>
-int sun(int a,int b);  // Function declaration 
+int sum(int a,int b);  // Function declaration 
 
 int main() {
     int a,b;
