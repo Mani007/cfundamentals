@@ -11,12 +11,28 @@ int nSum(int n){
     return res;
 
 }
+
+int nFactorial(int n){
+    if (n==0 || n==1) 
+    {
+        return 1;
+    }
+
+    int res = n * nFactorial(n - 1);
+    return res;
+    
+    
+    }
 int main() {
      int n = 5;
 
     // calling the function
     int sum = nSum(n);
 
-    printf("Sum of First %d Natural Numbers: %d", n, sum);
+    // calling the function
+    int fsum = nFactorial(n);
+
+    printf("Sum of First %d Natural Numbers: %d \n", n, sum);
+    printf("Factorial of First %d Natural Numbers: %d \n", n, fsum);
 return 0;
 }
