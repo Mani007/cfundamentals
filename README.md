@@ -125,7 +125,15 @@ type function_name (args) {
     // base condition
     // recursion case (recursive call)
 }
-```
+```    
+### Array in C   
+List of collection of data of same type. Its stored in continuous consecutive locations. It can also store derived data types in memory location. their is no limit to dimension of array. 1D array is Vectors, 2D array is Matrices, 3 or more D array are tensors. Array has indexes to access its element. we can also use pointers to access elements of array. Any element of an array can be accessed very quickly using indexes or base address arthmatics. [More info here](https://www.geeksforgeeks.org/c-arrays/)  
+```C
+data_type array_name [size];
+         or
+data_type array_name [size1] [size2]...[sizeN];  // N-dimensional array
+```   
+
 
 
 
