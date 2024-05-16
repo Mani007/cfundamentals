@@ -161,7 +161,7 @@ ptr = &var;  // pointer initialization
   
 Types of pointers   
 1. int, float etc. pointers   
-2. NULL pointer - pointer with no value is assigned 
+2. NULL pointer - pointer with NULL value is assigned, often used with if statement 
 ```C
 data_type *pointer_name = NULL;
 ```
