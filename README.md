@@ -158,6 +158,41 @@ ptr = &var;  // pointer initialization
  printf("Value at *ptr = %d \n", *ptr); // pointer dereferencing
 ```
 ![Pointer Dereferncing](https://media.geeksforgeeks.org/wp-content/uploads/20230223170531/2.png)   
+  
+Types of pointers   
+1. int, float etc. pointers   
+2. NULL pointer - pointer with no value is assigned 
+```C
+data_type *pointer_name = NULL;
+```
+3. Array pointer
+```C
+char *ptr = &array_name;
+```
+4. struct pointer  
+```C
+struct struct_name *ptr;
+```
+5. function pointer  
+```C
+int (*ptr)(int, char);
+```
+6. double pointer  
+```C
+datatype ** pointer_name;
+*pointer_name; // get the address stored in the inner level pointer
+**pointer_name; // get the value pointed by inner level pointer
+```
+7. void pointer - generic pointer
+```C
+void * pointer_name;
+```
+8. wild pointer - pointer with no initial value or garbage value
+```C
+int *ptr;
+char *str;
+```
+and many more types of pointer
 
 
 
