@@ -15,6 +15,7 @@ int main()
                          {22, 32},
                        }
                      };
+    // arr itself is the pointer to the first cell of 3D array 
   int i, j, k;
   for (i = 0; i < 2; i++)
   {
