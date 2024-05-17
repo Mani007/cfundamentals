@@ -134,7 +134,7 @@ data_type array_name [size];
 data_type array_name [size1] [size2]...[sizeN];  // N-dimensional array
 ```   
 ### Pointers in C  
-Variable that stores address of another variable is called pointer. Pointer size depends on size of the variable its storing. Pointers are declared using * symbol.   
+Variable that stores address of another variable is called pointer. Pointer size depends on size of the variable its storing. Pointers are declared using * symbol. More information can be found [Link](https://www.geeksforgeeks.org/c-pointers/)
 '*' is used to declare pointer variable.   
 '*ptr' is known as dereferencing operator for pointer variable ptr.   
 '&' is known as address of operator, used to store address to pointer variable.    
@@ -165,7 +165,7 @@ Types of pointers
 ```C
 data_type *pointer_name = NULL;
 ```
-3. Array pointer
+3. Array pointer and multi-dimensional array - [more info](https://www.geeksforgeeks.org/pointer-array-array-pointer/)
 ```C
 char *ptr = &array_name;
 ```
