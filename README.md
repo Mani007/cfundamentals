@@ -194,7 +194,25 @@ char *str;
 ```
 and many more types of pointer   
 
-**Pointer Arthmatics**
+**Pointer Arithmetics**  
+There are 4 types of arithmetic operation performed on pointers.   
+- ++ and -- , + and -   
+- Increment in a Pointer
+- Decrement in a Pointer
+- Addition of integer to a pointer
+- Subtraction of integer to a pointer
+- Subtracting two pointers of the same type
+- Comparison of pointers of the same type.
+- Assignment of pointers of the same type.   
+
+```C
+int a = 2;
+int* ptr; 
+ptr = &a; 
+// Pointer arithmetic 
+ptr = ptr + 1; // pointer ptr + the size of the pointer ptr which here is 8 bytes
+``` 
+
 
 **Uses of Pointers in C**
 
