@@ -228,7 +228,7 @@ ptr = ptr + 1; // pointer ptr + the size of the pointer ptr which here is 8 byte
 
 **Advantages of Pointers**
 
-- Pointers are used for dynamic memory allocation and deallocation.
+- Pointers are used for dynamic memory allocation and de-allocation.
 - An Array or a structure can be accessed efficiently with pointers
 - Pointers are useful for accessing memory locations.
 - Pointers are used to form complex data structures such as linked lists, graphs, trees, etc.
@@ -240,7 +240,16 @@ ptr = ptr + 1; // pointer ptr + the size of the pointer ptr which here is 8 byte
 - Pointers are a little bit complex to understand.
 - Pointers are majorly responsible for memory leaks in C.
 - Pointers are comparatively slower than variables in C.
-- Uninitialized pointers might cause a segmentation fault.
+- Uninitialized pointers might cause a segmentation fault.   
+
+### Array and pointers 
+Pointers and Two-Dimensional Arrays  
+In a two-dimensional array, we can access each element by using two subscripts, where the first subscript represents the row number and the second subscript represents the column number. The elements of 2-D array can be accessed with the help of pointer notation also.   
+Suppose arr is a 2-D array, we can access any element arr[i][j] of the array using    
+the pointer expression * (*(arr + i) + j). Now we’ll see how this expression can be derived.    
+
+![NdArray](https://media.geeksforgeeks.org/wp-content/uploads/diagram.png)
+
 
 
 
