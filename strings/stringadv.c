@@ -20,7 +20,8 @@ void ptrstr(char array[]){
     
 }
 int main() {
-    char arr[] = {'a', 'b', 'c', 'd', 'e','\0'};
-    ptrstr(arr);
+    //char arr[] = {'a', 'b', 'c', 'd', 'e','\0'};
+    char arr[] = {"abcde"};  // "abcde" we do not need to provide \0 for terminations
+    printstr(arr);
 return 0;
 }
