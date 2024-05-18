@@ -251,7 +251,7 @@ the pointer expression * (*(arr + i) + j). Now we’ll see how this expression c
 ![NdArray](https://media.geeksforgeeks.org/wp-content/uploads/diagram.png)   
 
 ### Call by value and call by reference
-Actual and formal parameters in function call expressions. In one way it is called by the direct value call/formal value call expression and in the second way it is called by by the addresses/actual value call in the function call expression. hence the return value of the function will also be changed by the call expression. By call by value the original values of the variables will not be changed where as the original values of the variables will be changed when call by reference. [more information](https://www.geeksforgeeks.org/difference-between-call-by-value-and-call-by-reference/)
+Actual and formal parameters in function call expressions. In one way it is called by the direct value call/formal value call expression and in the second way it is called by by the addresses/actual value call in the function call expression. hence the return value of the function will also be changed by the call expression. By call by value the original values of the variables will not be changed where as the original values of the variables will be changed when call by reference. [more information here](https://www.geeksforgeeks.org/difference-between-call-by-value-and-call-by-reference/)
 
 
 
