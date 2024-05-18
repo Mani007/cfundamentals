@@ -149,6 +149,16 @@ char namechar[]= {'S','T','R','I','N','G','\0'} // null character is used
 ```  
 ![Character array](https://media.geeksforgeeks.org/wp-content/uploads/20220808180435/memoryrepresentationofanarrayofstringsinC2.jpg)  
 
+### Builtin string functions from <string.h> 
+We have builtin string functions in C.   
+1. strlen(stringname) returns length of string
+2. strcpy(s1, s2) Copies the contents of string s2 to string s1.
+3. strcmp(str1, str2)	Compares the first string with the second string. If strings are the same it returns 0.
+4. strcat(s1, s2)	Concat s1 string with s2 string and the result is stored in the first string.
+5. strlwr()	Converts string to lowercase.
+5. strupr()	Converts string to uppercase.
+6. strstr(s1, s2)	Find the first occurrence of s2 in s1.   
+
 ### Pointers in C  
 Variable that stores address of another variable is called pointer. Pointer size depends on size of the variable its storing. Pointers are declared using * symbol. More information can be found [Link](https://www.geeksforgeeks.org/c-pointers/)
 '*' is used to declare pointer variable.   
