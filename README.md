@@ -138,7 +138,17 @@ List of collection of data of same type. Its stored in continuous consecutive lo
 data_type array_name [size];
          or
 data_type array_name [size1] [size2]...[sizeN];  // N-dimensional array
-```   
+```     
+
+### String in C   
+The strings is nothing but character array with termination character such as \0, also known as null character. \0 is used to declare termination character. Without null character you cannot store the string. Hence length of string is length of string + 1. String is not a builtin data type in C, its just a character array terminated by null character.   
+```C
+char variable_name[r] = {list of string};
+char name[] = {"STRING"};  // C compiler will automatically put null character at the end of the string AS WE HAVE USED  "" to define string
+char namechar[]= {'S','T','R','I','N','G','\0'} // null character is used
+```  
+![Character array](https://media.geeksforgeeks.org/wp-content/uploads/20220808180435/memoryrepresentationofanarrayofstringsinC2.jpg)  
+
 ### Pointers in C  
 Variable that stores address of another variable is called pointer. Pointer size depends on size of the variable its storing. Pointers are declared using * symbol. More information can be found [Link](https://www.geeksforgeeks.org/c-pointers/)
 '*' is used to declare pointer variable.   
