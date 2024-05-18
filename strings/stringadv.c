@@ -8,8 +8,19 @@ void printstr(char array[]){
     }
     
 }
+
+void ptrstr(char array[]){
+    char *i;
+    i = array;  // initialization of i variable is required
+    while (*i != '\0')
+    {
+        printf("%c", *i);
+        i++;
+    }
+    
+}
 int main() {
     char arr[] = {'a', 'b', 'c', 'd', 'e','\0'};
-    printstr(arr);
+    ptrstr(arr);
 return 0;
 }
