@@ -126,6 +126,12 @@ type function_name (args) {
     // recursion case (recursive call)
 }
 ```    
+### Arrays as function parameters
+We can provide arrays as function parameters using the following   
+1. by declaring array as function parameters
+2. by passing address of array as parameter through pointer.   
+Arrays in C are always passed to the function as pointers pointing to the first element of the array.  
+
 ### Array in C   
 List of collection of data of same type. Its stored in continuous consecutive locations. It can also store derived data types in memory location. their is no limit to dimension of array. 1D array is Vectors, 2D array is Matrices, 3 or more D array are tensors. Array has indexes to access its element. we can also use pointers to access elements of array. Any element of an array can be accessed very quickly using indexes or base address arthmatics. [More info here](https://www.geeksforgeeks.org/c-arrays/)  
 ```C
