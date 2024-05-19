@@ -319,7 +319,34 @@ struct structure_name str = { value1, value2, value3 };
 struct structure_name str = { .member1 = value1, .member2 = value2, .member3 = value3 };
 
 ```
-![structures in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Structure-In-C.png)
+![structures in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Structure-In-C.png)   
+
+### Typedef in structure in C
+We can use typedef in declaration of structure in C, so that we do not have to to write long structure declarations further in the programme. We can almost use struct as a variable after declaring the structure. 
+```C
+struct Foo{
+  int i;
+};
+
+// another way of using typedef with structures 
+typedef struct student { 
+    int x; 
+} newstudent;
+
+// defining new name for str1 
+typedef struct Foo fun; 
+
+// we can use typedef in main programme as
+int main(){
+  newstudent A;
+  fun B;
+  A.x = 1;
+  B.i = 2;
+  ......
+  return 0;
+}
+```
+
 
 
 
