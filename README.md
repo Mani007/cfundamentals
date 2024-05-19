@@ -277,7 +277,50 @@ the pointer expression * (*(arr + i) + j). Now we’ll see how this expression c
 ![NdArray](https://media.geeksforgeeks.org/wp-content/uploads/diagram.png)   
 
 ### Call by value and call by reference
-Actual and formal parameters in function call expressions. In one way it is called by the direct value call/formal value call expression and in the second way it is called by by the addresses/actual value call in the function call expression. hence the return value of the function will also be changed by the call expression. By call by value the original values of the variables will not be changed where as the original values of the variables will be changed when call by reference. [more information here](https://www.geeksforgeeks.org/difference-between-call-by-value-and-call-by-reference/)
+Actual and formal parameters in function call expressions. In one way it is called by the direct value call/formal value call expression and in the second way it is called by by the addresses/actual value call in the function call expression. hence the return value of the function will also be changed by the call expression. By call by value the original values of the variables will not be changed where as the original values of the variables will be changed when call by reference. [more information here](https://www.geeksforgeeks.org/difference-between-call-by-value-and-call-by-reference/)  
+
+### Structures in C 
+It is user defined datatype. It also combines multiple datatypes. Often DOT operator is used to navigate structures.   
+```C
+struct structure_name {
+    data_type member_name1;
+    data_type member_name1;
+    ....
+    ....
+};  
+// varible structure declaretion 
+struct structure_name {
+    data_type member_name1;
+    data_type member_name1;
+    ....
+    ....
+}variable1, varaible2, ...;  
+
+// structure declared beforehand
+struct structure_name variable1, variable2, .......;  
+
+// accessing data member in structure
+structure_name.member1;
+strcuture_name.member2;   
+
+// initialization of structure with values
+struct structure_name str;
+str.member1 = value1;
+str.member2 = value2;
+str.member3 = value3;
+.
+.
+.
+
+// Or we can do the same as 
+struct structure_name str = { value1, value2, value3 }; 
+
+// or 
+struct structure_name str = { .member1 = value1, .member2 = value2, .member3 = value3 };
+
+```
+![structures in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Structure-In-C.png)
+
 
 
 
