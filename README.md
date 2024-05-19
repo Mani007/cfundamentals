@@ -322,8 +322,14 @@ struct structure_name str = { .member1 = value1, .member2 = value2, .member3 = v
 ![structures in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Structure-In-C.png)   
 
 ### Typedef in structure in C
-We can use typedef in declaration of structure in C, so that we do not have to to write long structure declarations further in the programme. We can almost use struct as a variable after declaring the structure. 
+We can use typedef in declaration of structure in C, so that we do not have to to write long structure declarations further in the programme. We can almost use struct as a variable after declaring the structure. *typedef* is used to give alternate name to existing data structures. Also known as alias name
 ```C
+typedef previous_name alias_name;
+
+//examples:
+typedef unsigned long ul; // now ul can be used instead of unsigned long
+ul l1,l2,l3; // now l1 and l2 and l3 are unsigned long
+
 struct Foo{
   int i;
 };
