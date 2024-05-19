@@ -5,10 +5,10 @@ struct employee_data
     int id;
     char* name;
     int age;
-};
+} employee;
 
 int main() {
-    struct employee_data employee;
+    //struct employee_data employee;
     employee.id = 101;
     employee.age = 25;
     // employee.name[0] = 'J';
