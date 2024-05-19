@@ -328,7 +328,12 @@ typedef previous_name alias_name;
 
 //examples:
 typedef unsigned long ul; // now ul can be used instead of unsigned long
-ul l1,l2,l3; // now l1 and l2 and l3 are unsigned long
+ul l1,l2,l3; // now l1 and l2 and l3 are unsigned long 
+
+ int* p,q; // note it means p is a pointer and q is an integer 
+// to make both pointer, we use typedef
+typedef int* intptr;
+intptr ptr1,ptr2; // both ptr1 and ptr2 are integer pointer
 
 struct Foo{
   int i;
