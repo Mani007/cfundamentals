@@ -3,7 +3,7 @@
 struct employee_data
 {
     int id;
-    char name[];
+    char* name;
     int age;
 };
 
