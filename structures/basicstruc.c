@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 // declaring a structure 
 struct employee_data
 {
     int id;
     char* name;
     int age;
+    char gender[20];
 } emp1, emp2;
 
 int main() {
@@ -19,12 +21,16 @@ int main() {
     // employee.name[3] = 'n';
     // employee.name[4] = '\0';
     emp1.name = "abc";
+    strcpy(emp1.gender, "male");
+    strcpy(emp2.gender, "female");
     printf("Employee ID is %d\n", emp1.id);
     printf("Employee age is %d\n", emp1.age);
     printf("Employee name is %s\n", emp1.name);
     printf("Employee ID is %d\n", emp2.id);
     printf("Employee age is %d\n", emp2.age);
     printf("Employee name is %s\n", emp2.name);
+    printf("Employee2 name is %s\n", emp2.gender);
+    printf("Employee1 name is %s\n", emp1.gender);
     
     
 return 0;
