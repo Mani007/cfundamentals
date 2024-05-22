@@ -3,10 +3,18 @@ int main(int argc, char const *argv[])
     int a[3][3] = {{1,2,3},
                    {4,5,6},
                    {7,8,9} };
+    int *ptr;
+    ptr = a;
     int (*p)[3][3];  // pointer for 3D array 
     p= &a;
     printf("Address of pointer p to array a[0][0] is %x\n",p); // address of initial value of array pointer
-    printf(" value of pointer *p to array a[0][0] is %d\n",*(p)); // 0
+    printf(" value of pointer *p to array a[0][0] is %d\n",*p); // 0
+    
+    printf(" Size of pointer ptr to array a[3][3] FIRST element is %d\n",sizeof(ptr)); // 0
+    printf(" Size of pointer *ptr VALUE is to array a[3][3] is %d\n",sizeof(*ptr)); // 0
+    printf(" Value of pointer *ptr to array a[3][3] FIRST element is %d\n",*ptr); // 0
+    printf(" Size of pointer p to array a[3][3] is %d\n",sizeof(p)); // 0
+    printf(" Size of VALUE in pointer *p to array a[3][3] is %d\n",sizeof(*p)); // 0
     printf(" value of array a[0][0] is %d\n",a[0][0]);  // 0
     // printf("Address of pointer p to array a[1] is %x\n",p+1);
     // printf("Second value of pointer *(p+1) to array a is %d\n",*(p+1)); // 1
