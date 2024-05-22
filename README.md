@@ -274,7 +274,54 @@ In a two-dimensional array, we can access each element by using two subscripts, 
 Suppose arr is a 2-D array, we can access any element arr[i][j] of the array using    
 the pointer expression * (*(arr + i) + j). Now we’ll see how this expression can be derived.    
 
-![NdArray](https://media.geeksforgeeks.org/wp-content/uploads/diagram.png)   
+![NdArray](https://media.geeksforgeeks.org/wp-content/uploads/diagram.png)     
+
+Multi dimension array is stored in the same way as single dimension array, but access in multi dimension way with indexes. With pointer access of values is different than from indexes.   
+```C
+// C program to print the elements of 3-D
+// array using pointer notation
+#include<stdio.h>
+int main()
+{
+  int arr[2][3][2] = {
+                       {
+                         {5, 10},
+                         {6, 11},
+                         {7, 12},
+                       },
+                       {
+                         {20, 30},
+                         {21, 31},
+                         {22, 32},
+                       }
+                     };
+  int i, j, k;
+  for (i = 0; i < 2; i++)
+  {
+    for (j = 0; j < 3; j++)
+    {
+       for (k = 0; k < 2; k++)
+         printf("%d\t", *(*(*(arr + i) + j) +k));
+       printf("\n");
+    }
+  }
+ 
+  return 0;
+}
+
+``` 
+The output of the above program is 
+```C
+5    10    
+6    11    
+7    12    
+20    30    
+21    31    
+22    32   
+```
+The memory layout of the multi dimension array is below.   
+
+![NdArray1](https://media.geeksforgeeks.org/wp-content/uploads/Diagram12-1.png)
 
 ### Call by value and call by reference
 Actual and formal parameters in function call expressions. In one way it is called by the direct value call/formal value call expression and in the second way it is called by by the addresses/actual value call in the function call expression. hence the return value of the function will also be changed by the call expression. By call by value the original values of the variables will not be changed where as the original values of the variables will be changed when call by reference. [more information here](https://www.geeksforgeeks.org/difference-between-call-by-value-and-call-by-reference/)  
@@ -381,6 +428,12 @@ str_parent.str_child.member;
 ```
 ### Structure pointers in C
 Accessing elements in the structure through the pointers is unique. We use dereferencing '*' operator or the arrow '->' operator. The confusion starts as operator and their precedence will play a crucial role in the access of pointer variable. Operator precedence details can be found [here](https://www.geeksforgeeks.org/operator-precedence-and-associativity-in-c/)   
+
+A structure pointer is defined as the pointer which points to the address of the memory block that stores a structure known as the structure pointer. Complex data structures like Linked lists, trees, graphs, etc. are created with the help of structure pointers.    
+
+**Disclaimer:** Please revise array pointers especially 2D and 3D matrices using pointers to enhance understanding of pointer operations. More details are [here]()
+
+**Note:** difference between structure and class in C++ can be found [here](https://www.geeksforgeeks.org/structure-vs-class-in-cpp/)   
 
 
 
