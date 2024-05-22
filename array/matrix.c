@@ -7,8 +7,8 @@ int main(int argc, char const *argv[])
     ptr = a;
     int (*p)[3][3];  // pointer for 3D array 
     p= &a;
-    printf("Address of pointer p to array a[0][0] is %x\n",p); // address of initial value of array pointer
-    printf(" value of pointer *p to array a[0][0] is %d\n",*p); // 0
+    printf("Address of pointer p to array a[0][0] is %x\n",p[0][0]); // address of initial value of array pointer
+    printf(" value of pointer *p to array a[0][0] is %d\n",*(p[0][0])); // 0
     
     printf(" Size of pointer ptr to array a[3][3] FIRST element is %d\n",sizeof(ptr)); // 0
     printf(" Size of pointer *ptr VALUE is to array a[3][3] is %d\n",sizeof(*ptr)); // 0
@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
         for (int j = 0; j<3; j++)
         {
             printf("Address of pointer p to array a[%d][%d] is %x\n",i,j,p+i+j); // address of initial value of array pointer
-            printf(" value of pointer *p to array a[%d][%d] is %d\n",i,j, *(*(p + i) + j)
+            printf(" value of pointer *p to array a[%d][%d] is %d\n",i,j, *(p[i][j])
             ); // We need the actual address of the array a instead of pointer p. 
             printf(" value of array with index is a[%d][%d] is %d\n",i,j,a[i][j]);  // 0
         }
