@@ -356,7 +356,31 @@ int main(){
   ......
   return 0;
 }
+
+// Nested structure 
+struct parent {
+    int member1;
+    struct member_str member2 {
+        int member_str1;
+        char member_str2;
+        ...
+    }
+    ...
+} 
+// Another way to nested structure
+struct parent {
+    struct mem a;
+};
+
+struct mem {
+    int var;
+};
+
+// Accessing nested members
+str_parent.str_child.member;
 ```
+### Structure pointers in C
+Accessing elements in the structure through the pointers is unique. We use dereferencing '*' operator or the arrow '->' operator. The confusion starts as operator and their precedence will play a crucial role in the access of pointer variable. Operator precedence details can be found [here](https://www.geeksforgeeks.org/operator-precedence-and-associativity-in-c/)   
 
 
 
