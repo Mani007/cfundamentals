@@ -3,8 +3,8 @@ int main(int argc, char const *argv[])
     int a[3][3] = {{1,2,3},
                    {4,5,6},
                    {7,8,9} };
-    int *p;
-    p= a;
+    int (*p)[3][3];  // pointer for 3D array 
+    p= &a;
     printf("Address of pointer p to array a[0][0] is %x\n",p); // address of initial value of array pointer
     printf(" value of pointer *p to array a[0][0] is %d\n",*(p)); // 0
     printf(" value of array a[0][0] is %d\n",a[0][0]);  // 0
