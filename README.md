@@ -436,6 +436,33 @@ A structure pointer is defined as the pointer which points to the address of the
 **Disclaimer:** Please revise array pointers especially 2D and 3D matrices using pointers to enhance understanding of pointer operations. More details are [here]()
 
 **Note:** difference between structure and class in C++ can be found [here](https://www.geeksforgeeks.org/structure-vs-class-in-cpp/)   
+```C
+// Declaration of structure 
+struct Student {
+    int roll_no;
+    
+};
+ 
+ int main()
+{
+ 
+    struct Student s1;
+    struct Student* ptr = &s1; // Declaration od structure pointer
+ 
+    s1.roll_no = 27;
+    // Method 1 of accessing the structure pointer
+    printf("Roll Number: %d\n", (*ptr).roll_no);   // Access structure using pointer ptr with dereferencing operator '*' and require brackets to manage precedence of operator. 
+
+    // Method 2 of accessing the structure pointer
+    printf("Roll No: %d\n", ptr->roll_no);  // Access structure using pointer ptr with '->' operator and hence does not require brackets. 
+    
+    return 0;
+}
+
+```
+
+More information for structure pointer can be found [here](https://www.geeksforgeeks.org/structure-pointer-in-c/)   
+Difference between c and c++ structure can be found [here](https://www.geeksforgeeks.org/difference-c-structures-c-structures/)
 
 
 
