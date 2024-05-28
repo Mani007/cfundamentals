@@ -2,13 +2,13 @@
 typedef struct point { // Be specific how you name the struct prefer small letters 
     int x, y, z; 
     struct point *next; 
-} points; 
+} Points; 
 int main() {
-    points p ={0,0,0, NULL};  // be specific how you name the struct prefer small letters
-    points q ={5,5,5,NULL}; 
+    Points p ={0,0,0, NULL};  // be specific how you name the struct prefer small letters
+    Points q ={5,5,5,NULL}; 
     
     printf("Point P is now x:%d  y:%d and z:%d \n", p.x, p.y,p.z);
-    points *ptr;
+    Points *ptr;
     ptr = &p;
     ptr->next = &q;
     printf("Point Q address is %x   \n", ptr->next);
