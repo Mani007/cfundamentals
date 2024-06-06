@@ -464,6 +464,29 @@ struct Student {
 More information for structure pointer can be found [here](https://www.geeksforgeeks.org/structure-pointer-in-c/)   
 Difference between c and c++ structure can be found [here](https://www.geeksforgeeks.org/difference-c-structures-c-structures/)
 
+### Unions in C 
+It is similar to structure but more memory efficient in implementation and execution compare to structure.   
+```C
+// Declaration for union
+union union_name {
+    datatype member1;
+    datatype member2;
+    ...
+};
+
+// instance of union
+union union_name var1, var2, var3...;
+
+// Access to union
+var1.member1;
+```
+
+
+| Structure   | Union |
+| :--------: | :-------: |
+| The size of the structure is equal to or greater than the total size of all of its members.  | The size of the union is the size of its largest member.   |
+| The structure can contain data in multiple members at the same time. | Only one member can contain data at the same time.     |
+| It is declared using the struct keyword.    | It is declared using the union keyword.    |
 
 
 
