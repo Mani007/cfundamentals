@@ -1,5 +1,5 @@
 #include <stdio.h>
-union employee
+struct employee
 {
     int id;
     char name[20];
@@ -8,7 +8,7 @@ union employee
 };
 
 int main() {
-    union employee e1;
+    struct employee e1;
     e1.id = 101;
     e1.salary = 10000;
     printf("Employee id is %d\n",e1.id);
