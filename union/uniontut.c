@@ -1,5 +1,6 @@
 #include <stdio.h>
-struct employee
+// note that union cannot handle all members at once hence you will see garbage values
+union employee
 {
     int id;
     char name[20];
@@ -8,14 +9,15 @@ struct employee
 };
 
 int main() {
-    struct employee e1;
-    e1.id = 101;
+    union employee e1;
+    // note that union cannot handle all members at once hence you will see garbage values
+    e1.id = 101;  // id will become garbage as we are changing salary in next line. 
     e1.salary = 10000;
-    printf("Employee id is %d\n",e1.id);
-    printf("The current salary is %f\n",e1.salary);
+    printf("Employee id is %d\n",e1.id);  // id will be garbage as we are changed salary in next line
+    printf("The current salary is %f\n",e1.salary); // the current salary will be displayed as we have changed salary recently
     e1.id = 102;
     printf("Employee id now %d\n",e1.id);
-    printf("The current salary is %f\n",e1.salary);
+    printf("The current salary is %f\n",e1.salary); // the current salary will not be displayed as we have changed id recently
     e1.salary = 20000;
     printf(" Employee id now is %d\n",e1.id);
     printf("Salary after change %f\n",e1.salary);
