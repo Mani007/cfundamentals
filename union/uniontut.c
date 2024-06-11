@@ -1,6 +1,7 @@
 #include <stdio.h>
 // note that union cannot handle all members at once hence you will see garbage values
 // memory allocation size is the size of the biggest member variable in the union
+// union can hold structures inside the union and vise versa is also true, but in case of union size of union is the size of the biggest member variable in the union
 union employee
 {
     int id;
