@@ -486,7 +486,11 @@ var1.member1;
 | :--------: | :-------: |
 | The size of the structure is equal to or greater than the total size of all of its members.  | The size of the union is the size of its largest member.   |
 | The structure can contain data in multiple members at the same time. | Only one member can contain data at the same time.     |
-| It is declared using the struct keyword.    | It is declared using the union keyword.    |
+| It is declared using the struct keyword.    | It is declared using the union keyword.    |   
+
+### Static Variables in C 
+As we know that local variables will take precedence over global variables, if declared with the same name, same is applicable to formal arguments of the functions.   
+Static variables will preserve their values even if they go out of scope. And memory will remain throughout the program.  
 
 
 
