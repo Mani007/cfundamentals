@@ -502,7 +502,7 @@ Static variable example below
 // function with static variable
 int fun()
 {
-    static int count = 0; // You always need to initialize the static variable
+    static int count = 0; // You always need to initialize the static variable otherwise it might be initialized from 0
     // static int count= fun(); // you cannot run a function to initialize the static variable
     count++;
     return count;
