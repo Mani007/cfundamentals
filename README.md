@@ -490,7 +490,42 @@ var1.member1;
 
 ### Static Variables in C 
 As we know that local variables will take precedence over global variables, if declared with the same name, same is applicable to formal arguments of the functions.   
-Static variables will preserve their values even if they go out of scope. And memory will remain throughout the program.  
+Static variables will preserve their values even if they go out of scope. And memory will remain throughout the program. Also you always need to initialize the value of static variables. You cannot initialize static variables by calling a function.    
+```C
+static data_type var_name = var_value;
+```   
+
+Static variable example below
+```C
+#include <stdio.h>
+ 
+// function with static variable
+int fun()
+{
+    static int count = 0; // You always need to initialize the static variable
+    // static int count= fun(); // you cannot run a function to initialize the static variable
+    count++;
+    return count;
+}
+ 
+int main()
+{
+    printf(" %d\n", fun());
+    printf(" %d\n", fun());
+    printf(" %d\n", fun());
+    printf(" %d\n", fun());
+    return 0;
+}
+```   
+Output is 
+```C
+1
+2
+3
+4
+```
+
+
 
 
 
