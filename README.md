@@ -523,7 +523,36 @@ Output is
 2
 3
 4
+```   
+### Memory layout in C - Dynamic memory allocation in C  
+
+| Static Memory Allocation   | Dynamic Memory Allocation |
+| :--------: | :-------: |
+| Allocation before program execution | Allocation in the program execution |
+| No memory reuse and cannot be freed | Memory can be freed and reallocated  |
+| Less efficient | More efficient  |   
+
+Memory in any c program is allocated in four segments.  Learn Embedded or micro-controller programming to understand how memory management works in C programming. 
+1. code and text 
+2. Static/Global variables - data segment(if initialized) and bss segments(if data is not initialized) bss= block started by symbol
+3. Stack (LIFO principle for function calls)
+4. Heap - for dynamic memory allocation     
+
+Use of heap for dynamic memory allocation is   
+1. we create a pointer in our main function to point to a certain block of memory in the heap.   
+2. Address of this pointer is stored in the local variable in the main function. You need to use good debugging skill to understand your program. 
+3. This memory allocated in the heap, even if we over write the pointer, cannot get free automatically as C and C++ do not have concept of garbage collector. Hence you need to cleanup the memory allocated if unused, otherwise it will cause memory leak issues.   
+
+command to check memory usage in C and C++ is assuming name of you program is myprogram.c 
+```C 
+gcc myprogram.c ; size .\a.exe 
+```   
+the result will look like using zize command of gcc
+```C
+text    data     bss     dec     hex filename
+10624    4052     384   15060    3ad4 .\a.exe
 ```
+
 
 
 
