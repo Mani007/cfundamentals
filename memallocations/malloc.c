@@ -26,14 +26,19 @@ int main() {
         printf("Memory successfully allocated using malloc.\n");
  
         // Get the elements of the array
-        for (i = 5; i < n; ++i) {
-            ptr[i] = i + 1;
+        for (i = 0; i < n; ++i) {
+            ptr[i] = i + 5;
         }
  
         // Print the elements of the array
-        printf("The address of memory location of elemets of array in hex: ");
+        printf("\n The address of memory location of elemets of array in hex: \n");
         for (i = 0; i < n; ++i) {
             printf("%x, ", ptr[i]);
+        }
+
+        printf("\n The element of value in the dynamically allocated array is: \n");
+        for (i = 0; i < n; ++i) {
+            printf("%d, ", ptr[i] );
         }
     }
  
