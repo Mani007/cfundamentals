@@ -551,7 +551,21 @@ the result will look like using zize command of gcc
 ```C
 text    data     bss     dec     hex filename
 10624    4052     384   15060    3ad4 .\a.exe
-```
+```   
+ There are 4 library functions provided by C defined under <stdlib.h> header file to facilitate dynamic memory allocation in C programming.   
+1. malloc()  
+The “malloc” or “memory allocation” method in C is used to dynamically allocate a single large block of memory with the specified size.   
+```C
+//ptr = (cast-type*) malloc(byte-size)
+ptr = (int*) malloc(100 * sizeof(int));
+//Since the size of int is 4 bytes, this statement will allocate 400 bytes of memory. And, the pointer ptr holds the address of the first byte in the allocated memory.
+```  
+![malloc in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Malloc-function-in-c.png)     
+
+2. calloc()
+3. free()
+4. realloc()
+
 
 
 
