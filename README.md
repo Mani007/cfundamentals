@@ -562,8 +562,24 @@ ptr = (int*) malloc(100 * sizeof(int));
 ```  
 ![malloc in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Malloc-function-in-c.png)     
 
-2. calloc()
-3. free()
+2. calloc()  
+“calloc” or “contiguous allocation” method in C is used to dynamically allocate the specified number of blocks of memory of the specified type. It initializes each block with a default value ‘0’. It has two parameters or arguments as compare to malloc().    
+```C
+//ptr = (cast-type*)calloc(n, element-size);
+//here, n is the no. of elements and element-size is the size of each element.
+ptr = (float*) calloc(25, sizeof(float));
+//This statement allocates contiguous space in memory for 25 elements each with the size of the float.
+ 
+```  
+![calloc in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/calloc-function-in-c.png)  
+
+3. free()     
+“free” method in C is used to dynamically de-allocate the memory. The memory allocated using functions malloc() and calloc() is not de-allocated on their own. Hence the free() method is used, whenever the dynamic memory allocation takes place. It helps to reduce wastage of memory by freeing it.  
+```C
+free(ptr);  // assuming ptr is pointer referring to allocated memory location 
+```
+![free in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Free-function-in-c.png)  
+
 4. realloc()
 
 
