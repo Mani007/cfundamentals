@@ -580,8 +580,14 @@ free(ptr);  // assuming ptr is pointer referring to allocated memory location
 ```
 ![free in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Free-function-in-c.png)  
 
-4. realloc()
+4. realloc()   
+“realloc” or “re-allocation” method in C is used to dynamically change the memory allocation of a previously allocated memory. re-allocation of memory maintains the already present value and new blocks will be initialized with the default garbage value.   
+```C
+ptr = realloc(ptr, newSize);
+//where ptr is reallocated with new size 'newSize'.
+```
 
+![free in C](https://media.geeksforgeeks.org/wp-content/cdn-uploads/realloc-function-in-c.png)  
 
 
 
