@@ -190,7 +190,8 @@ Types of pointers
 2. NULL pointer - pointer with NULL value is assigned, often used with if statement 
 ```C
 data_type *pointer_name = NULL;
-```
+```  
+When you declare a pointer without any initial value, the pointer has garbage value unless you declare it NULL. also NULL is used to check the status of pointer. Null pointer value is reserved for referencing the not valid object. We cannot dereference null pointer. NULL pointer is preferred over uninitialized pointer. Null pointer is a value of pointer where as void pointer is a type of pointer. Technically Null pointer is ((void *)0) void pointer multiplied by zero. 
 3. Array pointer and multi-dimensional array - [more info](https://www.geeksforgeeks.org/pointer-array-array-pointer/)
 ```C
 char *ptr = &array_name;
