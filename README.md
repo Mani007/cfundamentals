@@ -211,8 +211,15 @@ datatype ** pointer_name;
 ```
 7. void pointer - generic pointer
 ```C
-void * pointer_name;
-```
+//void * pointer_name;
+int x=10;
+char y='A';
+void *p;
+p = &x; // void pointer is type casted to int pointer
+p = &y; // void pointer is type casted to char pointer
+```  
+It has no data type associated with it. And hence it can easily be type casted to any other data type, its a general purpose pointer.   
+In dynamic memory allocation the pointer is (void *) using malloc() and calloc(). We cannot dereference void pointer directly. And pointer arthmatic is not allowed in void pointer.   
 8. wild pointer - pointer with no initial value or garbage value
 ```C
 int *ptr;
@@ -602,7 +609,8 @@ Extern storage class simply tells us that the variable is defined elsewhere and 
 This storage class is used to declare static variables which are popularly used while writing programs in C language. Static variables have the property of preserving their value even after they are out of their scope! Hence, static variables preserve the value of their last use in their scope. So we can say that they are initialized only once and exist till the termination of the program. Thus, no new memory is allocated because they are not re-declared. Their scope is local to the function to which they were defined. Global static variables can be accessed anywhere in the program. By default, they are assigned the value 0 by the compiler. 
 
 4. register   
-This storage class declares register variables that have the same functionality as that of the auto variables. The only difference is that the compiler tries to store these variables in the register of the microprocessor if a free register is available. This makes the use of register variables to be much faster than that of the variables stored in the memory during the runtime of the program. If a free registration is not available, these are then stored in the memory only. Usually, a few variables which are to be accessed very frequently in a program are declared with the register keyword which improves the running time of the program. An important and interesting point to be noted here is that we cannot obtain the address of a register variable using pointers. 
+This storage class declares register variables that have the same functionality as that of the auto variables. The only difference is that the compiler tries to store these variables in the register of the microprocessor if a free register is available. This makes the use of register variables to be much faster than that of the variables stored in the memory during the runtime of the program. If a free registration is not available, these are then stored in the memory only. Usually, a few variables which are to be accessed very frequently in a program are declared with the register keyword which improves the running time of the program. An important and interesting point to be noted here is that we cannot obtain the address of a register variable using pointers.   
+
 
 
 
