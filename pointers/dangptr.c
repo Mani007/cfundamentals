@@ -1,20 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-int* fun()
-{
-    // x now has scope throughout the program
-    static int x = 5;
- 
-    return &x;
-}
 
-int main()
+
+   int main()
 {
-    int* p = fun();
-    fflush(stdin);
+    // creating a block
+    int* ptr;
+    {
+        int a = 10;
+        ptr = &a;
+    }
  
-    // p points to something which is not
-    // valid anymore
-    printf("%d", *p);
+    // ptr here becomes dangling pointer
+    printf("%d", *ptr);
+ 
 return 0;
 }
