@@ -222,12 +222,15 @@ p = &x; // void pointer is type casted to int pointer
 p = &y; // void pointer is type casted to char pointer
 ```  
 It has no data type associated with it. And hence it can easily be type casted to any other data type, its a general purpose pointer.   
-In dynamic memory allocation the pointer is (void *) using malloc() and calloc(). We cannot dereference void pointer directly. And pointer arthmatic is not allowed in void pointer.   
-8. wild pointer - pointer with no initial value or garbage value
+In dynamic memory allocation the pointer is (void *) using malloc() and calloc(). We cannot dereference void pointer directly. And pointer arthmatic is not allowed in void pointer.  
+
+8. wild pointer - pointer with no initial value or garbage value   
+A pointer that has not been initialized to anything (not even NULL) is known as a wild pointer. The pointer may be initialized to a non-NULL garbage value that may not be a valid address. 
 ```C
 int *ptr;
 char *str;
 ``` 
+
 9. Dangling pointer   
 Its a pointer with pointing to a freed memory location or the location that has been deleted. Dangling pointer arises during object destruction. Its adisable to setup a dangling pointer to NULL unless been used again. Also make sure that your functions will always check for NULL and dangling pointers.   
 Three main ways a dangling pointer is formed: Deallocation, our of scope variable, and returning local variable in the function call.   
