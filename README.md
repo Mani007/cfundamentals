@@ -627,14 +627,14 @@ Preprocessing means mainly removal of comments, expansion of macros, and expansi
 Some examples of preprocessor directives are   
 1. #define - Also known for defining macro or inline functions or substitutions. 
 2. #undefine 
-3. #include 
+3. #include  - It calls the content of other C files. Header files or .h files mostly include the function prototypes as promise to be resolved at the time of calling. 
 4. #ifdef
 5. #ifndef
 6. #else
 7. #endif
 8. #elif
 9. #if 
-10. #pragma
+10. #pragma - #pragma once means the compiler should include all these files only once at the time of compilations. Irrespective of how many time you open these functions. We can also use #ifndef instead of #pragma once. 
 
 
 
