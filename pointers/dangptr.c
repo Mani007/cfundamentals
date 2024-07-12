@@ -1,13 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main() {
-    int* ptr = (int*)malloc(sizeof(int));
+int* fun()
+    {
+    // x is local variable and goes out of
+    // scope after an execution of fun() is
+    // over.
+    int x = 5;
  
-    // After below free call, ptr becomes a dangling pointer
-    free(ptr);
-    printf("Memory freed\n");
+    return &x;
+    }
+
+
+int main()
+{
+    int* p = fun();
+    fflush(stdin);
  
-    // removing Dangling Pointer
-    ptr = NULL;
+    // p points to something which is not
+    // valid anymore
+    printf("%d", *p);
 return 0;
 }
