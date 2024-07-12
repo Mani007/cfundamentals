@@ -1,4 +1,5 @@
 # All my C/C++ tutorials
+Note: Most of the content here are not my original content. They are mainly taken from free to use existing resources such as geekforgeek or tutorialpoint etc. You can google any topics in the notes below and you can find these content original sources. Hence All credits goes to original authors and contributors. I have just compiled it. 
 ### Basic C Program execution   
 **Note:** for c++ setup in VScode please watch this video [link](https://www.youtube.com/watch?v=ABVeAXcRIJg&ab_channel=Codeflash)   
 
@@ -191,7 +192,8 @@ Types of pointers
 ```C
 data_type *pointer_name = NULL;
 ```  
-When you declare a pointer without any initial value, the pointer has garbage value unless you declare it NULL. also NULL is used to check the status of pointer. Null pointer value is reserved for referencing the not valid object. We cannot dereference null pointer. NULL pointer is preferred over uninitialized pointer. Null pointer is a value of pointer where as void pointer is a type of pointer. Technically Null pointer is ((void *)0) void pointer multiplied by zero. 
+When you declare a pointer without any initial value, the pointer has garbage value unless you declare it NULL. also NULL is used to check the status of pointer. Null pointer value is reserved for referencing the not valid object. We cannot dereference null pointer. NULL pointer is preferred over uninitialized pointer. Null pointer is a value of pointer where as void pointer is a type of pointer. Technically Null pointer is ((void *)0) void pointer multiplied by zero.    
+
 3. Array pointer and multi-dimensional array - [more info](https://www.geeksforgeeks.org/pointer-array-array-pointer/)
 ```C
 char *ptr = &array_name;
@@ -225,7 +227,12 @@ In dynamic memory allocation the pointer is (void *) using malloc() and calloc()
 ```C
 int *ptr;
 char *str;
-```
+``` 
+9. Dangling pointer   
+Its a pointer with pointing to a freed memory location or the location that has been deleted. Dangling pointer arises during object destruction. Its adisable to setup a dangling pointer to NULL unless been used again. Also make sure that your functions will always check for NULL and dangling pointers.   
+Three main ways a dangling pointer is formed: Deallocation, our of scope variable, and returning local variable in the function call.   
+When memory is free but the pointer keeps pointing the same spot with some garbage value, give rise to a dangling pointer. Secondly when the local variable is not static and the function returns a pointer to that local variable. The pointer pointing to the local variable becomes dangling pointer. And thirdly When a variable goes out of scope the pointer pointing to that variable becomes a dangling pointer.  
+
 and many more types of pointer   
 
 **Pointer Arithmetics**  
